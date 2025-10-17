@@ -9,7 +9,5 @@ package Myclass;
  */
 public abstract class DB_Element
 {
-    public String getID(){
-        
-    }
+    public abstract String getID();
 }

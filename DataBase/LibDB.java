@@ -9,17 +9,23 @@ import java.util.*;
  */
 public class LibDB<T extends DB_Element>
 {
+    // 컨스트럭터 생성
+    public LibDB(){
+        this.db = new ArrayList<T>();
+    }
     //ArrayList를 참조한 Pirvate 형태의 변수 db정의 
     private ArrayList<T> db;
     
-    // 리턴값 없음, db 요소를 추가하는 파라메터 1개
     public void addElement(T element){
-        
+        db.add(element);//db요소에 element 파라메터 추가
     }
     
-    public String findElement(){
+    public String findElement(String s){
         //이터레이터로 반복작업 써야함
-        return()
+        Iterator<T> it = db.iterator();
+        while(it.hasNext()){
+            System.out.println(it.next());
+        }
     }
     
     public void printAllElements(){
