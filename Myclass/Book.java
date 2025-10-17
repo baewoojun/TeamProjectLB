@@ -1,4 +1,5 @@
-package myClass;
+<<<<<<< HEAD
+package Myclass;
 
 
 /**
@@ -33,3 +34,27 @@ public class Book
         return x + y;
     }
 }
+=======
+package Myclass;
+
+
+/**
+ * 여기에 Book 클래스 설명을 작성하십시오.
+ * 
+ * @author (작성자 이름) 
+ * @version (버전번호나 날짜)
+ */
+public class Book
+{
+    private String author();
+    
+    private String BookID();
+    
+    private String publisher();
+    
+    private String title();
+    
+    private int year();
+    
+}
+>>>>>>> d06616792c3ec6993fa8157ddfacea853f94e15c

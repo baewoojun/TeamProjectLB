@@ -1,4 +1,4 @@
-package myClass;
+package Myclass;
 
 
 /**
