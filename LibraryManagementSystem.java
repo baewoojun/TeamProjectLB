@@ -12,11 +12,11 @@ import java.lang.*;
 public class LibraryManagementSystem
 {
     // 요구 사항#4
-    LibDB<Book> bookDB;
-    HashMap<User, Book> loanDB;
-    LibDB<User> userDB;
+    LibDB<User> userDB = new LibDB<User>();
+    LibDB<Book> bookDB = new LibDB<Book>();
+    HashMap<User, Book> loanDB = new HashMap<User, Book>();
     
-    public LibraryManagementSystem(){
+    LibraryManagementSystem(){
         
     }
     

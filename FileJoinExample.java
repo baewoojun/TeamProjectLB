@@ -27,7 +27,7 @@ public class FileJoinExample {
         Map<Integer, Book> bookMap = new HashMap<>();
         List<User> users = new ArrayList<>();
 
-        // 1️⃣ BookData2025.txt 읽기 → bookMap에 저장
+        // BookData2025.txt 읽기 → bookMap에 저장
         try (FileReader frBook = new FileReader("BookData2025.txt");
              Scanner bookScanner = new Scanner(frBook)) {
 
@@ -44,7 +44,7 @@ public class FileJoinExample {
             System.out.println("책 데이터 파일 읽기 오류: " + e.getMessage());
         }
 
-        // 2️⃣ UserData2025.txt 읽기 → users 리스트에 저장
+        // UserData2025.txt 읽기 → users 리스트에 저장
         try (FileReader frUser = new FileReader("UserData2025.txt");
              Scanner userScanner = new Scanner(frUser)) {
 
@@ -60,7 +60,7 @@ public class FileJoinExample {
             System.out.println("사용자 데이터 파일 읽기 오류: " + e.getMessage());
         }
 
-        // 3️⃣ 두 데이터를 "bookId"로 연동해서 출력
+        // 두 데이터를 "bookId"로 연동해서 출력
         System.out.println("=== 이용자별 대출 도서 목록 ===");
         for (User u : users) {
             Book b = bookMap.get(u.bookId);
