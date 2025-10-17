@@ -13,12 +13,12 @@ public class LibDB<T extends DB_Element>
     // ArrayList를 참조한 private 변수 db 정의
     private ArrayList<T> db;
     
-    // 컨스트럭터 생성 
+    // 컨스트럭터 생성
     public LibDB(){
         this.db = new ArrayList<T>();
     }
     
-    //
+    //리턴값 없음, db 요소를 추가하는 파라메터 1개
     public void addElement(T element){
         db.add(element);
     }
@@ -35,8 +35,9 @@ public class LibDB<T extends DB_Element>
                 return element.toString();
             }
         }
-        
+
         return "Element with ID " + s + " not found.";
+
     }
     
     public void printAllElements(){
