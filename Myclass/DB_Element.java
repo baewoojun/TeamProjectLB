@@ -9,7 +9,11 @@ package Myclass;
  */
 public abstract class DB_Element
 {
+<<<<<<< HEAD
     public String getID(){
         
     }
+=======
+    public abstract String getID();
+>>>>>>> 89700f327c8754c44bd7b095f2da2685a1316c57
 }
